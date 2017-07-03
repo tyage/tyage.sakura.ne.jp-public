@@ -1,0 +1,192 @@
+.clearfix {
+	/zoom : 1;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+html {
+	background: #FCF9F0;
+}
+
+body {
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+nav li {
+	display: inline;
+	margin: 0 5px;
+}
+
+#Header a, #Footer a {
+	color: white;
+}
+
+#Header {
+	padding: 30px 10px 80px 10px;
+	background: #2C1D1A;
+	color: white;
+}
+	#HeaderInner, #FooterInner {
+		width: 985px;
+		margin: 0 auto;
+	}
+		#Header hgroup {
+			float: left;
+			font-size: 30px;
+		}
+		#HeaderNav {
+			float: left;
+			margin: 10px 0px 0px 100px;
+		}
+		#HeaderWidget {
+			float: right;
+		}
+
+#Content {
+	width: 985px;
+	margin: 0 auto;
+}
+	.main-content {
+		width: 980px;
+		margin: 0 0 -2px 0;
+		border: 2px solid #888;
+		background: white;
+	}
+
+#slide {
+	height: 400px;
+	position: relative;
+	margin: -50px 0 -2px 0;
+}
+	#slide-content li {
+		width: 980px;
+		height: 400px;
+		position: absolute;
+	}
+	#slide-nav {
+		position: absolute;
+		right: 0px;
+		top: 10px;
+	}
+		#slide-nav li {
+			background: #666;
+			color: white;
+			font-weight: bold;
+			padding: 7px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		#slide-nav li:hover {
+			background: #999;
+		}
+
+#time-table {
+	overflow: auto;
+}
+	#time-table ul {
+		width: 1100px;
+		height: 200px;
+		padding: 10px 10px 30px 10px;
+	}
+		#time-table li {
+			display: block;
+			float: left;
+			width: 200px;
+			margin: 0 10px;
+			height: 200px;
+			border: 2px solid #aaa;
+		}
+			#time-table .content {
+				height: 160px;
+				padding: 5px;
+			}
+			#time-table .summary {
+				border-top: 1px solid #aaa;
+				padding: 5px;
+				font-size: 13px;
+			}
+		#time-table li.time {
+			width: 100px;
+			background: #aaa;
+			border: 2px solid #666;
+			color: white;
+			text-align: center;
+		}
+			#time-table li.time p {
+				margin: 30px 0 0 0;
+			}
+			#time-table li.time p.bold {
+				font-size: 30px;
+				font-weight: bold;
+			}
+
+#menu {
+	margin: 10px 0;
+}
+	#main-menu {
+		padding: 10px;
+		float: left;
+		width: 640px;
+	}
+		#main-menu .menu {
+			width: 300px;
+			margin: 10px;
+			float: left;
+		}
+	#sub-menu {
+		float: right;
+		width: 300px;
+		margin: 0 10px 0 0;
+	}
+		#sub-menu .menu {
+		}
+
+	#menu .menu {
+		background: white;
+	}
+		#menu .menu .content {
+			border: 1px solid #aaa;
+			height: 200px;
+			margin: 10px 0px;
+		}
+		#menu .menu .title {
+			text-align: center;
+		}
+
+#Footer {
+	padding: 15px 0;
+	font-size: 14px;
+	background: #2C1D1A;
+	color: white;
+}
+	#FooterAbout, #FooterNav, #FooterAppStore {
+		float: left;
+		padding: 0px 15px;
+	}
+		#FooterWidget, #FooterAbout p {
+			padding: 3px 0;
+		}
+	
+		#FooterNav ul {
+			float: left;
+			padding: 0 15px;
+			width: 150px;
+		}
+			#FooterNav li {
+				display: block;
+				padding: 5px 0;
+			}
+			#FooterNav li.top {
+				font-size: 20px;
+				font-weight: bold;
+				border-bottom: 1px solid white;
+				padding: 0 0 5px 0;
+				margin: 0 0 5px 0;
+			}

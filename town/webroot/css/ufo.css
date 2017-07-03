@@ -1,0 +1,17 @@
+#ufoCatch {
+	display: left;
+	position: relative;
+	width: 500px;
+	height: 300px;
+	border: solid 3px #000000;
+}
+#ufo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.coin {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+}

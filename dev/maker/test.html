@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='ja'>
+	<head>
+		<meta charset="UTF-8">
+		<title>スーパー正男さんカッケーっす</title>
+		<link rel='stylesheet' href='reset.css'>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.3/themes/base/jquery-ui.css">
+		<link rel='stylesheet' href='game.css'>
+		<link rel='stylesheet' href='http://tyage.sakura.ne.jp/css/action.css'>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+			google.load('jquery', '1.4.2');
+			google.load('jqueryui', '1.8.4');
+		</script>
+		<!-- box2djs -->
+		<script src='base.js'></script>
+		<script src='draw.js'></script>
+		<!--[if IE]><script type="text/javascript" src="lib/excanvas.js"></script><![endif]-->
+		<script src="lib/prototype-1.6.0.2.js"></script>
+		<script src="js/Box2d.js"></script>
+		<!-- END -->
+	</head>
+	<body>
+		<script>
+			jQuery(function ($) {
+				var canvas = $('#gameCanvas');
+				var ctx = canvas.get(0).getContext('2d');
+				var canvasWidth = canvas.width();
+				var canvasHeight = canvas.height();
+				var world = createWorld();
+				var timer;
+				createBox(world, 100, 120, 32, 32, false);
+				createBox(world, 90, 70, 16, 16, false);
+				createBox(world, 110, 30, 20, 20, false);
+
+				timer = setInterval(function () {
+					var timeStep = 1.0/60;
+					var iteration = 1;
+					world.Step(timeStep, iteration);
+					ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+					for (var b = world.m_bodyList; b; b = b.m_next) {
+						for (var s = b.GetShapeList(); s != null; s = s.GetNext()) {
+							var extents = s.m_localOBB.extents;
+							var v = b2Math.AddVV(s.m_position, b2Math.b2MulMV(s.m_R, s.m_vertices[2]));
+							//ctx.rotate(Math.atan2(s.m_vertices[2].y - s.m_vertices[1].y, s.m_vertices[2].x - s.m_vertices[1].x));
+							ctx.rotate(359.5 * Math.PI / 180);
+							ctx.drawImage(img, v.x, v.y, extents.x*2, extents.y*2);
+						}
+					}
+				}, 30);
+			})
+		</script>
+		<canvas id='gameCanvas' width='500' height='300' style='background:gray;'></canvas>
+	</body>
+</html>

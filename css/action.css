@@ -1,0 +1,24 @@
+#ALroom{
+	position : relative;
+	margin-left : auto;
+	margin-right : auto;
+	border : solid 3px #dedede;
+	background : #efefff;
+	padding : 0px;
+}
+#ALroom .ALitem{
+	z-index : 2;
+	cursor : pointer;
+	font-size : 30px;
+}
+#ALlinkDetail,#ALhelpContent{
+	z-index : 3;
+	border : solid 2px #9966ff;
+	background : #eeeeee;
+	padding : 5px;
+}
+#ALroom .ALblock{
+	border : solid 1px #9a9a9a;
+	background : #eeeeee;
+	font-size : 20px;
+}

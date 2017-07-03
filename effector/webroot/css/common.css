@@ -1,0 +1,137 @@
+.clearfix {
+	zoom: 1;
+}
+ .clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+pre {
+	white-space: -moz-pre-wrap; /* Mozilla */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	white-space: pre-wrap; /* CSS3 */
+	word-wrap: break-word; /* IE 5.5+ */
+}
+
+a {
+	color: #00C;
+}
+
+#Header {
+	background: #00AEEF;
+	padding: 10px 20px;
+}
+	#Header h1 {
+		font-size: 40px;
+	}
+		#Header h1 a {
+			text-decoration: none;
+			color: white;
+		}
+		#Header h1 a:hover {
+			text-decoration: underline;
+		}
+
+#Content {
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+#Footer {
+	margin: 10px 0;
+}
+
+nav {
+	margin: 10px 0 0 0;
+}
+
+section {
+	margin: 10px 0 0 0;
+	border: 1px solid #aaa;
+	padding: 10px;
+}
+	section h2 {
+		font-size: 30px;
+	}
+
+aside {
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+
+.post {
+	border: 1px solid #aaa;
+	margin: 10px 0;
+	padding: 10px;
+}
+	.post header {
+		border-bottom: 1px solid #aaa;
+		padding: 0 0 10px 0;
+		position: relative;
+	}
+		.post header h3 {
+			font-size: 25px;
+			margin: 0 0 5px 0;
+		}
+		.post header .action {
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin: 0;
+		}
+	.post dt {
+		margin: 15px 0 5px 0;
+		font-weight: bold;
+		color: #009;
+	}
+	.post dd {
+		padding: 0 0 0 20px;
+	}
+	.post footer {
+		text-align: right;
+	}
+
+form {
+  margin:0 auto;
+}
+form div.input {
+  zoom:1;
+  padding:5px 0;
+}
+form div.input:after {
+  content:url(data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7);
+  display:block;
+  clear:both;
+  height:0;
+}
+form div.input label {
+  float:left;
+  background:#5184D2;
+  padding:10px;
+  margin:0 10px 0 0;
+  width:150px;
+  color: white;
+}
+form div.input input, form div.input textarea {
+  float:left;
+  min-height:25px;
+  line-height:20px;
+  font-size:18px;
+  width:370px;
+}
+form div.submit {
+  text-align:center;
+  margin:15px 0 0 0;
+}
+form div.submit input {
+  background:#5184D2;
+  font-size:20px;
+  color: white;
+}
+.error-message {
+	color: red;
+	margin: 10px 0 0 0;
+}

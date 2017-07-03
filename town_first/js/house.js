@@ -1,0 +1,7 @@
+$house = {
+
+};
+
+$house.set = function(){
+	
+};

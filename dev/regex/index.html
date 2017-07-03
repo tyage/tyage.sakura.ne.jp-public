@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href='recet.css'></link>
+		<link rel="stylesheet" type="text/css" href='base.css'></link>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script>google.load('jquery', 1);</script>
+		<script src='base.js'></script>
+	</head>
+	<body>
+		<hgroup>
+			<h1>/(<span class='reg'>Reg</span><span class='ex'>Ex</span>)/<span class='hot'>HOT</span> $1/</h1>
+			<h2><a href='http://regex.gkbr.me/'>RegEx</a>で熱そうなの、探します。</h2>
+		</hgroup>
+		
+		<hr>
+		
+		<span href='#' data-count='50' class='get'>50件取得</span>
+		<span href='#' data-count='100' class='get'>100件取得</span>
+		<span href='#' data-count='100' class='get'>200件取得</span>
+		<span href='#' data-count='100' class='get'>500件取得</span>
+		
+		<ul id='entries'>
+		</ul>
+		<p id='onload'>取得中...</p>
+	</body>
+</html>

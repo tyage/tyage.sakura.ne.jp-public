@@ -1,0 +1,14 @@
+table.mail {
+	width: 100%;
+	table-layout: fixed;
+}
+table.mail > tbody > tr.mes_detail {
+	background: #ffffcc;
+}
+table.mail > tbody > tr.mes > td > pre {
+	display: none;
+}
+table.mail > tbody > tr.mes > td > pre {
+	width: 100%;
+	overflow-x: auto;
+}

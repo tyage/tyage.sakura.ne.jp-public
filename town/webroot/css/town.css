@@ -1,0 +1,61 @@
+#towns {
+	margin-right: 10px;
+	position: relative;
+	width: 512px;
+	height: 512px;
+}
+table.town {
+	border: none;
+	width: 512px;
+	height: 512px;
+	z-index: 2;
+}
+table.town td {
+	width: 32px;
+	height: 32px;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+table.town img {
+	display: block;
+}
+
+table.town .sell.selected {
+	background: red;
+}
+
+#townMap, #townMap td {
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+#townMap img {
+	vertical-align: bottom;
+}
+#townMap h4 {
+	position: absolute;
+	margin: 3px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+#townMap img.light {
+	display: none;
+}
+#townMap img.light.present {
+	display: inline;
+}
+#townMap img.dark.present {
+	display: none;
+}
+
+/* chara */
+.chara {
+	position: absolute;
+	z-index: 20;
+}
+.chara.self {
+	cursor: move;
+}

@@ -1,0 +1,32 @@
+div.tab > ul {
+	list-style: none;
+}
+div.tab > ul > li {
+	float: left;
+	color: #999999;
+	padding: 5px 30px;
+	margin-left: 5px;
+	background: #eeeeee;
+	text-align: center;
+	border: solid 3px #666666;
+}
+div.tab > ul.top > li {
+	border-bottom-width: 0px;
+}
+div.tab > ul.bottom > li {
+	border-top-width: 0px;
+}
+div.tab  > ul > li.on {
+	color: #eeeeee;
+	background: #999999;
+}
+div.tab > ul > li.select {
+	color: #eeeeee;
+	background: #666666;
+}
+div.tab > div {
+	background: #ffffff;
+	border: 3px solid #666666;
+	padding: 5px;
+	width: 450px;
+}

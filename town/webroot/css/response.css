@@ -1,0 +1,16 @@
+.response {
+	border: 1px #cccccc solid;
+	margin: 10px;
+	padding: 6px;
+}
+.response .info {
+	font-size: 100%;
+	margin-bottom: 40px;
+}
+.response .user {
+	float: left;
+	font-weight: bold;
+}
+.response .created {
+	float: right;
+}

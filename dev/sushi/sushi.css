@@ -1,0 +1,76 @@
+#Content {
+	position: relative;
+}
+
+#result {
+	margin: 20px 0px 0px 0px;
+}
+	#result span {
+		color: red;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+#forms {
+	padding: 20px 0px;
+}
+
+#shokunin {
+	position: absolute;
+	left: 90%;
+}
+#scroll div {
+	position: absolute;
+	left: 90%;
+	top: auto;
+	z-index: 10;
+	
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	
+	background-repeat: no-repeat;
+	background-position: 4px 4px;
+}
+#scroll span {
+	position: relative;
+	top: -15px;
+	width: 60px;
+	color: red;
+	font-weight: bold;
+	font-size: 10px;
+}
+#scroll_table {
+	width: 90%;
+	height: 10px;
+	background-color: #c60;
+	margin: 0 auto;
+}
+
+#table{
+	width: 100px;
+	height: 100px;
+	margin: 20px auto;
+}
+
+h2 {
+	font-size: 20px;
+}
+h3{
+	margin: 0px 0px 10px 0px;
+	padding : 0px 0px 5px 5px;
+	border-left : 1px dotted #aaa;
+	border-bottom : 1px dotted #aaa;
+}
+
+table td, table th {
+	border: 1px solid #aaa;
+	padding: 5px;
+}
+
+section {
+	margin: 20px 0px 20px 20px;
+}
+section hgroup {
+	margin: 0px 0px 0px -20px;
+}

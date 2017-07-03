@@ -1,0 +1,23 @@
+body {
+	width: 100%;
+}
+
+#photos {
+	margin: 0 auto;
+	width: 1000px;
+}
+.photo {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	border: 1px gray solid;
+	margin: 10px;
+}
+.photo a {
+	display: block;
+}
+.photo img {
+	display: block;
+	max-width: 300px;
+	max-height: 300px;
+}

@@ -1,0 +1,1 @@
+<?= $html->image('screen/main.jpg', array('width' => 500)); ?>

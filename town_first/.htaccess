@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine off
+</IfModule>
+
+<Files ~ "(chara|cron|ini|library|view).php">
+	order allow,deny
+	Deny from all
+</Files>

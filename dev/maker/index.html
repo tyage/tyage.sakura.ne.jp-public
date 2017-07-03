@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang='ja'>
+	<head>
+		<meta charset="UTF-8">
+		<title>スーパー正男さんカッケーっす</title>
+		<link rel='stylesheet' href='reset.css'>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.3/themes/base/jquery-ui.css">
+		<link rel='stylesheet' href='game.css'>
+		<link rel='stylesheet' href='http://tyage.sakura.ne.jp/css/action.css'>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+			google.load('jquery', '1.4.2');
+			google.load('jqueryui', '1.8.4');
+		</script>
+		<script src='game.js'></script>
+		<script src='http://tyage.sakura.ne.jp/js/action.js'></script>
+		
+		<!-- box2djs -->
+		<script src='base.js'></script>
+		<script src='draw.js'></script>
+		<!--[if IE]><script type="text/javascript" src="lib/excanvas-compressed.js"></script><![endif]-->
+		<script src="lib/prototype-1.6.0.2.js"></script>
+		<script src="js/Box2d.js"></script>
+		<!-- END -->
+
+	</head>
+	<body>
+		<div id='gameWindow' class='clearfix'>
+			<div id='gameWorld'>
+				<div id='charaOption' class='option'>
+					<div class='optionInner'>
+						<a href='#delete' class='delete'>削除</a>
+					</div>
+				</div>
+			</div>
+			<ul id='charaList'></ul>
+		</div>
+		
+		<div id='gameTabs'>
+			<ul>
+				<li>
+					<a href='#explanation'>説明</a>
+				</li>
+				<li>
+					<a href='#execute' id='executeHandler'>実行</a>
+				</li>
+				<li>
+					<a href='#box2d' id='box2dHandler'>box2d</a>
+				</li>
+				<li>
+					<a href='#gameConfig'>設定</a>
+				</li>
+			</ul>
+			<div id='explanation' class='tabWindow'>
+				<p>キャラクターを選んでゲーム用キャンバスに設置してね。</p>
+				<p>実行タブから遊べるよ。</p>
+				<p>まだまだ開発中</p>
+			</div>
+			<div id='execute' class='tabWindow'>
+				<div id='ALroom'></div>
+			</div>
+			<div id='box2d' class='tabWindow'>
+				<canvas id='gameCanvas' width='500' height='300' style='background:gray;'></canvas>
+			</div>
+			<div id='gameConfig' class='tabWindow'>
+				<section>
+					<header>
+						<h2>わーるど設定</h2>
+					</header>
+					<textarea rows='20' cols='100' id='worldConfig'>
+return {
+  timerSpeed : 50, //タイマーのスピード（ミリ秒）
+  //上下左右に対応するキーコード（複数可）
+  keyno : {
+    37 : "left",
+    38 : "up",
+    39 : "right",
+    40 : "down",
+    32 : "space"
+  },
+  //表示画面に関するデータ
+  window : {
+    width : 500, //幅
+    height : 300, //高さ
+    //壁に当たったときの跳ね返り率
+    bounce : {
+      top : 0.5,
+      right : 0.5,
+      bottom : 0.5,
+      left : 0.5
+    },
+    //壁に当たったときにどれだけスクロールさせるか
+    //（top,bottomだと左、right,leftだと下向きが正）
+    scroll : {
+      top : 0,
+      right : 0,
+      bottom : 0,
+      left : 0
+    },
+    //ループするか
+    loop : {
+      x : false,
+      y : false
+    }
+  }
+};
+					</textarea>
+				</section>
+				<section>
+					<header>
+						<h2>キャラデフォルト値設定</h2>
+					</header>
+					<textarea rows='20' cols='100' id='charaDefault'>
+return {
+  type : "block",
+  x : "rand", //右上からのpx単位での距離（"rand"だとランダム）
+  y : "rand", //右上からのpx単位での距離（"rand"だとランダム）
+  width : 32, //幅
+  height : 32, //高さ
+  link : null, //リンク先
+  linkDetail : null, //リンク先の説明
+  jumpRate : 20, //どれくらいの確率でジャンプするか（高いほどジャンプする確率が低い）
+  content : "", //表示する文字（imgが設定されている場合は表示されない）
+  limit : -1, //あと何更新で消すか（負の場合は消さない）
+  isTreadable : false, //他のキャラから踏みつけられると消えるか
+  isDeletable : false, //クリックすると消えるか
+  isPushable : true, //他のキャラから押されると動くか
+  //動ける最大の座標
+  max : {
+    x : 0,
+    y : 0
+  },
+  //動ける最小の座標
+  min : {
+    x : 0,
+    y : 0
+  },
+  //基本となるスピード
+  baseSpeed : {
+    x : 0, //横向きのスピード
+    y : 0, //縦向きのスピード
+    jx : 0, //横にジャンプするときのスピード
+    jy : 0, //縦にジャンプするときのスピード
+    gx : 0, //横向きの重力
+    gy : 0, //縦向きの重力
+    rx : 1/2, //横向きの空気抵抗
+    ry : 1/2 //縦向きの空気抵抗
+  },
+  //最大スピード
+  maxSpeed : {
+    x : 0,
+    y : 0
+  },
+  //最小スピード
+  minSpeed : {
+    x : 0,
+    y : 0
+  },
+  //現在のスピード
+  speed : {
+    x : 0,
+    y : 0
+  },
+  //ぶつかってきた物体の跳ね返らせ率
+  bounce : {
+    top : 1/2,
+    right : 1/2,
+    bottom : 1/2,
+    left : 1/2
+  },
+  //ぶつかってきた物体をどれだけスクロールさせるか
+  scroll : {
+    top : 0,
+    right : 0,
+    bottom : 0,
+    left : 0
+  },
+  //画像
+  img : {
+    now : null, //現在
+    stop : null, //停止
+    up : null, //ジャンプ
+    right : null, //右に移動
+    right2 : null, //右に移動二つ目（rightと交互に表示）
+    down : null, //落下
+    left : null, //左に移動
+    left2 : null, //左に移動二つ目（leftと交互に表示）
+    uleft : null, //左向きにジャンプ
+    uright : null, //右向きにジャンプ
+    dleft : null, //左向きに落下
+    dright : null, //右向きに落下
+    bleft : null, //左に移動しながら減速
+    bright : null, //右に移動しながら減速
+    tleft : null, //左を向きながら踏み潰される
+    tright : null //右を向きながら踏み潰される
+  },
+  elem : {}, //要素の属性値、スタイル等の設定
+  isBlockable : ["top","right","bottom","left"] //他のキャラがぶつかったときに、ブロックする場所
+}
+					</textarea>
+				</section>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,36 @@
+#blog {
+	margin-left: auto;
+	margin-right: auto;
+	background: #ffffff;
+	padding: 10px;
+	width: 90%;
+	border: 1px solid #0000ff;
+}
+#blog h2 {
+	margin-bottom: 10px;
+	padding: 5px;
+	border: 1px solid #0000ff;
+	border-width: 0px 0px 1px 1px;
+}
+#blog span.info {
+	float: right;
+	font-size: 80%;
+}
+#blog pre {
+	margin-bottom: 10px;
+}
+#blog p.comment {
+	display: block;
+	margin-bottom: 5px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+#blog div.comment {
+	margin-bottom: 5px;
+	padding: 5px;
+}
+#blog div.comment div {
+	margin-bottom: 5px;
+	padding: 5px;
+	border: 1px solid #0000ff;
+}

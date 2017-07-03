@@ -1,0 +1,8 @@
+#chat > p {
+	white-space: nowrap;
+	overflow: none;
+}
+#chat > p > label {
+	display: block;
+	float: left;
+}

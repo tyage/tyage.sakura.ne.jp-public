@@ -1,0 +1,13 @@
+/** tree **/
+p.folder {
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	cursor: pointer;
+}
+p.open {
+	background-image: url(/town/img/folder_open.gif);
+}
+p.close {
+	background-image: url(/town/img/folder_close.gif);
+}

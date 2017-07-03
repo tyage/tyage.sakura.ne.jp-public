@@ -1,0 +1,91 @@
+header {
+	margin: 10px 0px 20px 80px;
+}
+	header h1 {
+		font-size: 2.5em;
+		float: left;
+	}
+		header h1 .ver {
+			color: #0d0;
+			font-size: 0.8em;
+		}
+	header h2 {
+		margin: 1.6em 0px 0px 20px;
+		font-size: 0.9em;
+		float: left;
+	}
+
+h3 {
+	margin: 10px 0px 20px 0px;
+	font-size: 1.5em;
+}
+
+form {
+	margin: 10px 0px;
+}
+
+pre {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+.time {
+	font-size: 0.8em;
+	text-align: right;
+}
+
+.red {
+	color: red;
+}
+.hide {
+	color: red;
+	background: red;
+	margin: 0px 3px;
+	font-weight: bold;
+	cursor: pointer;
+}
+	.hide.open {
+		background: transparent;
+	}
+
+.usage {
+	margin: 0px 0px 0px 40px;
+}
+
+.text {
+	margin: 10px;
+	padding: 10px;
+	background: #E8EEF7;
+	border: 1px solid #aad;
+	border-radius: 10px;
+}
+
+#recent {
+	padding: 10px 0px;
+	list-style: none;
+}
+	#recent li {
+		float: left;
+		margin: 0px 15px;
+	}
+
+#textForm {
+	text-align: center;
+	margin: 20px 0px 20px 0px;
+}
+	#textForm textarea {
+		display: block;
+		width: 700px;
+		height: 300px;
+		margin: 10px auto;
+		border: 1px solid #aaa;
+		outline: none;
+	}
+
+#source {
+	display: none;
+	margin: 10px 0px 0px 0px;
+	width: 500px;
+	height: 300px;
+	position: absolute;
+}

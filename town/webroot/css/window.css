@@ -1,0 +1,44 @@
+div.window {
+	position: absolute;
+	top: -1000px;
+	left: -1000px;
+	width: 550px;
+	border: solid 3px #000000;
+	background: #aaee44;
+	padding: 5px;
+	cursor: auto;
+	z-index: 1000;
+}
+div.window > div.top {
+	width: 92%;
+	background: #aaee44;
+	color: #ffffff;
+	font-weight: bold;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	cursor: move;
+}
+div.window > div.top > div.title {
+	float: left;
+	cursor: move;
+}
+div.window > div.top > div.title > span.title {
+	margin-right: 10px;
+}
+div.window > div.top > div.command {
+	background: #aaee44;
+	text-align: right;
+	cursor: move;
+}
+div.window > div.top > div.command > span {
+	font-size: 120%;
+	cursor: pointer;
+}
+div.window > div.content {
+	height: 330px;
+	width: 92%;
+	overflow: auto;
+	padding: 20px;
+	background: #ffffff;
+	cursor: auto;
+}

@@ -1,0 +1,104 @@
+/** layout **/
+#content {
+	padding-left: 75px;
+}
+
+/* navi */
+#navi {
+	 background: #eeeeee;
+	 border: 3px solid #6464FF;
+	 padding: 3px;
+	 width: 300px;
+	 position: absolute;
+	 z-index: 500;
+}
+
+/* side */
+#side {
+	position: fixed;
+	z-index: 500;
+	top: 40px;
+	left: -600px;
+	padding-left: 0px;
+}
+#side nav {
+	position: absolute;
+	left: 600px;
+}
+#side nav ul {
+	list-style-type: none;
+	margin-bottom: 10px;
+	padding-left: 0px;
+}
+#side nav li {
+	width: 55px;
+	background: #cfcfcf;
+	margin-bottom: -2px;
+	margin-left: -10px;
+	border: solid 2px #aac;
+	border-left: none;
+	text-align: center;
+	cursor: pointer;
+	padding: 3px;
+}
+#side nav li a {
+	display: block;
+	width: 50px;
+	padding-left: 5px;
+}
+
+/* sidebar contents */
+#side-content {
+	position:absolute;
+	background: #ddd;
+	border: solid 2px #aac;
+	z-index: 10;
+	width: 594px;
+	height: 500px;
+}
+#side-content header {
+	background: #aac;
+	padding: 5px;
+	height: 20px;
+}
+#side-content header a {
+	font-weight: bold;
+	color: #fff;
+}
+#new-window {
+	float: left;
+}
+#close-side {
+	float: right;
+}
+#side-content .content {
+	padding: 10px;
+	width: 574px;
+	height: 450px;
+	overflow: auto;
+}
+
+/* entry */
+#entry {
+	float: left;
+}
+#entry img {
+	max-width: 20px;
+	max-height: 20px;
+	padding-right: 5px;
+}
+#topic ul,#entry ul {
+	padding-left: 0px;
+	display: inline;
+}
+#topic li,#entry li {
+	display: inline;
+	padding-left: 10px;
+	border-left: 1px solid;
+}
+
+/* topic */
+#topic {
+	float: right;
+	margin-right: 30px;
+}

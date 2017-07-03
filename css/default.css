@@ -1,0 +1,55 @@
+.clearfix {
+	/zoom : 1;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+html {
+	background: #FAFAFA;
+	height: 100%;
+}
+
+body {
+	max-width: 900px;
+	margin: -10px auto 0 auto;
+	padding: 10px 0px 0px 0px;
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+	outline: 1px solid #EEE;
+	background: #FFF;
+	min-height: 100%;
+}
+
+p {
+	line-height : 120%;
+}
+
+a {
+	color : #00C;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+pre.wrap {
+	white-space: -moz-pre-wrap; /* Mozilla */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	white-space: pre-wrap; /* CSS3 */
+	word-wrap: break-word; /* IE 5.5+ */
+}
+
+#Content {
+	padding: 10px 20px 0px 20px;
+}
+
+#Footer {
+	margin: 10px 0px 0px 0px;
+	padding: 10px 0px;
+	border-top: 1px solid #79D;
+	text-align: center;
+}

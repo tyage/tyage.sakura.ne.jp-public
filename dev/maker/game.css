@@ -1,0 +1,85 @@
+body {
+	padding: 20px;
+}
+
+.clearfix {
+	/zoom : 1;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.chara {
+	border: 2px solid transparent;
+}
+
+#gameWindow {
+
+}
+	#gameWorld {
+		width: 500px;
+		height: 300px;
+		border: 1px solid #aaa;
+		float: left;
+	}
+		.option {
+			display: none;
+			background: #eee;
+			position: absolute;
+			width: 50px;
+		}
+			.optionInner {
+				margin: 1px 0px 0px;
+				padding: 5px;
+				border: 1px solid #ccc;
+			}
+		#gameWorld .charaWrapper {
+			position: absolute;
+		}
+		#gameWorld .charaWrapper:hover {
+			z-index: 2147483647;
+		}
+			#gameWorld .chara.hover {
+				border: 2px solid red;
+			}
+
+	#charaList {
+		margin: 0px 0px 0px -1px;
+		width: 200px;
+		height: 300px;
+		border: 1px solid #ccc;
+		list-style-type: none;
+		float: left;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+		#charaList li {
+			float: left;
+			padding: 10px;
+		}
+		#charaList li:hover {
+			background: #eee;
+		}
+		#charaList li.selected {
+			background: #ccc;
+		}
+
+#gameTabs {
+	margin: 20px 0px 0px;
+}
+	.tabWindow {
+		padding: 10px;
+	}
+	#gameConfig section {
+		border: 1px solid #ccc;
+		padding: 10px;
+		margin: 10px;
+	}
+		#gameConfig header {
+			margin: 0px 0px 10px;
+		}
+		#gameConfig textarea {
+			font-size: 0.8em;
+		}

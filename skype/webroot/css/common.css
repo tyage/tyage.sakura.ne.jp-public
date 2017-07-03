@@ -1,0 +1,194 @@
+/* compiled by http://leafo.net/lessphp/ */
+
+.clearfix { zoom:1; }
+.clearfix:after {
+  content:url(data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7);
+  display:block;
+  clear:both;
+  height:0;
+}
+.pre-wrap {
+  white-space:-moz-pre-wrap;
+  white-space:-pre-wrap;
+  white-space:-o-pre-wrap;
+  white-space:pre-wrap;
+  word-wrap:break-word;
+}
+body {
+  margin:0 auto;
+  background:#00aeef;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+pre {
+  white-space:-moz-pre-wrap;
+  white-space:-pre-wrap;
+  white-space:-o-pre-wrap;
+  white-space:pre-wrap;
+  word-wrap:break-word;
+  font-size:16px;
+  line-height: 1.4em;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+form {
+  width:560px;
+  margin:0 auto;
+}
+form div.input {
+  zoom:1;
+  padding:5px 0;
+}
+form div.input:after {
+  content:url(data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7);
+  display:block;
+  clear:both;
+  height:0;
+}
+form div.input label {
+  float:left;
+  background:#d2d2d2;
+  padding:10px;
+  margin:0 10px 0 0;
+  width:150px;
+}
+form div.input input, form div.input textarea {
+  float:left;
+  min-height:25px;
+  line-height:20px;
+  font-size:18px;
+  width:370px;
+}
+form div.input #PostUsername { width:250px; }
+form div.input #PostPassword { width:160px; }
+form div.input #PostId { width:160px; }
+form div.submit {
+  text-align:center;
+  margin:15px 0 0 0;
+}
+form div.submit input {
+  background:#d2d2d2;
+  font-size:20px;
+}
+#Header {
+  background: url(/img/header.png) no-repeat center top;
+}
+#Header #HeaderInner {
+  width:760px;
+  height:200px;
+  margin:0 auto;
+  text-align:center;
+  position:relative;
+}
+#Header #HeaderInner #Logo {
+	margin:70px auto 0 auto;
+}
+#Header #HeaderInner nav {
+  position:absolute;
+  bottom:10px;
+  left:175px;
+  font-size:18px;
+  zoom:1;
+}
+#Header #HeaderInner nav:after {
+  content:url(data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7);
+  display:block;
+  clear:both;
+  height:0;
+}
+#Header #HeaderInner nav li {
+  border-right:1px solid white;
+  margin:0 10px 0 0;
+  padding:0 10px 0 0;
+  float:left;
+}
+#Header #HeaderInner nav li:last-child { border:none; }
+#Header #HeaderInner nav li a {
+  color:white;
+  text-decoration:none;
+}
+#Content {
+  background:white;
+  padding:15px 0;
+}
+#Content #ContentInner {
+  width:760px;
+  margin:0 auto;
+  font-size:14px;
+}
+#Footer { height:200px; }
+.ad {
+  margin:0 auto;
+  width:728px;
+}
+.post {
+  zoom:1;
+  border:1px solid #aaaaaa;
+  margin:15px 0;
+  padding:15px;
+  background:#f0f0f0;
+}
+.post:after {
+  content:url(data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7);
+  display:block;
+  clear:both;
+  height:0;
+}
+.post.comment {
+  width:400px;
+  float:right;
+  margin:15px 0 0 0;
+  padding:15px;
+  border:none;
+  border-top:1px solid #aaaaaa;
+}
+.post header {
+  zoom:1;
+  margin:0 0 20px 0;
+}
+.post header:after {
+  content:url(data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7);
+  display:block;
+  clear:both;
+  height:0;
+}
+.post header .title {
+  float:left;
+  color:red;
+  font-weight:normal;
+  font-size:25px;
+  margin:0 10px 0 0;
+}
+.post header .username {
+  float:left;
+  margin:7px 0 0 0;
+}
+.post header .detail { float:right; }
+.post footer { zoom:1; }
+.post footer:after {
+  content:url(data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7);
+  display:block;
+  clear:both;
+  height:0;
+}
+.post footer nav { float:right; }
+.post .comments { zoom:1; }
+.post .comments:after {
+  content:url(data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7);
+  display:block;
+  clear:both;
+  height:0;
+}
+.page { text-align:center; }
+.page .counter { float:left; }
+.page .prev { padding:0 15px 0 0; }
+.page .next { padding:0 0 0 15px; }
+
+#warning li {
+	padding: 0 0 10px 0;
+	color: gray;
+	line-height: 1.4em;
+	font-size: 16px;
+}
+.error-message {
+	color: red;
+	font-weight: bold;
+}

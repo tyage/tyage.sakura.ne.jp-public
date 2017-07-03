@@ -1,0 +1,1 @@
+<?= $html->link('出る', '/spas/recover/'.$spa['Spa']['id']); ?>

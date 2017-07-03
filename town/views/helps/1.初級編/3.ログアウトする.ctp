@@ -1,0 +1,1 @@
+<?= $html->image('screen/logout.jpg', array('width' => 500)); ?>
